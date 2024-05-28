@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parallax Scrolling Website | Travelling between Space and the Desert</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+/* The Header's Design and Position */
+header .Header {
+    color: #eac27c;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#482d01,#eac27c);
+}
+
+/* The images used */
+.parallaxImg1 {
+    background-image: url("Images/Space.jpeg");
+}
+
+.parallaxImg2 {
+    background-image: url("Images/Sky.jpeg");
+}
+
+.parallaxImg3 {
+    background-image: url("Images/Desert.jpeg");
+}
+
+.parallaxImg1, .parallaxImg2, .parallaxImg3 {
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<header>
+<a href="#" class="Header">Between Space and The Desert</a>
+</header>
+
+<!-- Instructions/Descriptions -->
+<p style="color: #eac27c;">Scroll down to travel from Space to the Desert and Scroll up to travel in the opposite direction.</p>
+
+
+<!-- Parallex Scrolling Effect -->
+<div class="parallaxImg1"></div>
+
+<div style="height:100px;background-color:#482d01;font-size:36px; color: #eac27c;">
+Reached Space
+</div>
+
+<div class="parallaxImg2"></div>
+
+<div style="height:100px;background-color:#482d01;font-size:36px; color: #eac27c;" >
+Going past the Sky
+</div>
+
+<div class="parallaxImg3"></div>
+
+
+<div style="height:100px;background-color:#482d01;font-size:36px; color: #eac27c;">
+Reached the Desert
+</div>
+
+
+</body>
+</html>
